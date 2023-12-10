@@ -11,13 +11,14 @@ public class menu : MonoBehaviour
     public GameObject menupanel;
     public GameObject infopanel;
     public GameObject settingspanel;
-
+    public GameObject startpanel;
   
     void Start()
     {
         menupanel.SetActive(true);
         infopanel.SetActive(false);
         settingspanel.SetActive(false);
+        startpanel.SetActive(false);
     }
 
    
@@ -38,7 +39,7 @@ public class menu : MonoBehaviour
         menupanel.SetActive(false);
         infopanel.SetActive(true);
         settingspanel.SetActive(false);
-        
+        startpanel.SetActive(false);
     }
 
     public void BackButton()
@@ -46,6 +47,7 @@ public class menu : MonoBehaviour
         menupanel.SetActive(true);
         infopanel.SetActive(false);
         settingspanel.SetActive(false);
+        startpanel.SetActive(false);
     }
 
     public void SettingsButton()
@@ -53,7 +55,7 @@ public class menu : MonoBehaviour
         menupanel.SetActive(false);
         infopanel.SetActive(false);
         settingspanel.SetActive(true);
-
+        startpanel.SetActive(false);
     }
 
     public void BackButton2()
@@ -61,7 +63,24 @@ public class menu : MonoBehaviour
         menupanel.SetActive(true);
         infopanel.SetActive(false);
         settingspanel.SetActive(false);
+        startpanel.SetActive(false);
 
     }
+    public void StartButton()
+    {
+        menupanel.SetActive(false);
+        infopanel.SetActive(false);
+        settingspanel.SetActive(false);
+        startpanel.SetActive(true);
+    }
+    public void BackButton3()
+    {
+        menupanel.SetActive(true);
+        infopanel.SetActive(false);
+        settingspanel.SetActive(false);
+        startpanel.SetActive(false);
+
+    }
+
 }
 

@@ -6,17 +6,12 @@ using UnityEngine.UI;
 
 public class volumesettings : MonoBehaviour
 {
-    [SerializeField] private AudioMixer myMixer;
-    [SerializeField] private Slider musicSlider;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public AudioMixer _audio;
 
-    // Update is called once per frame
-    void Update()
+    public void SetVolume(float vol)
     {
-        
+        _audio.SetFloat("Music", vol);
     }
-}
+   
+    
+}  
